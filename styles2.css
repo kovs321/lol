@@ -1,0 +1,237 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+/* Overall page background */
+.ai-page {
+    background-color: #ffffff; /* Telegram dark mode background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2cm;
+    position: relative; /* Allow placement of decorative elements */
+    overflow: hidden; /* Prevent overflow for large decorative elements */
+  }
+  
+  .bubble-container {
+    background-color: #18aaff; /* Bright blue bubble */
+    border-radius: 20px; /* Rounded edges for the bubble */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 4rem; /* Increase padding to make the bubble content more spaced */
+    max-width: 90%; /* Allow the bubble to take up more width */
+    width: 800px; /* Set a specific width */
+    height: auto; /* Automatically adjust height based on content */
+    text-align: center; /* Center align text */
+    color: #202c33; /* Dark text inside the bubble */
+    margin-top: -10rem; /* Move the bubble higher */
+  }
+
+  
+
+  
+  
+  /* Bubble title */
+  .bubble-title {
+    font-size: 2.5rem; /* Large title text */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: "Joti One";
+  }
+  
+  /* Bubble text */
+  .bubble-text {
+    font-size: 1.6rem; /* Slightly smaller descriptive text */
+    line-height: 1.8; /* Improve readability */
+    margin-bottom: 2rem;
+    font-family: "Joti One";
+  }
+  
+  /* Button inside the bubble */
+  .bubble-button {
+    background-color: #dd00ff; /* Telegram primary blue */
+    color: white; /* White text on button */
+    border: none;
+    padding: 15px 30px; /* Size of the button */
+    font-size: 1.2rem;
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .bubble-button:hover {
+    background-color: #005f99; /* Darker blue on hover */
+  }
+  
+  
+  .call-screen {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .call-ui {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .call-ui img {
+    width: 300px;
+    height: auto;
+  }
+  
+  .green-button {
+    position: absolute;
+    bottom: 65px; /* Adjust this to position the button closer or farther from the image */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50px;
+    z-index: 10;
+  }
+  
+  .green-button.hidden {
+    display: none; /* Hides the button when the call is answered */
+  }
+  
+  .red-alert {
+    background: red;
+    color: white;
+    text-align: center;
+    animation: flash 0.5s infinite alternate;
+  }
+  
+  @keyframes flash {
+    from {
+      background-color: red;
+    }
+    to {
+      background-color: darkred;
+    }
+  }
+  
+  .timer {
+    font-size: 2rem;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  
+  .siren {
+    font-size: 5rem;
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .wallet-section {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .wallet-text {
+    font-size: 2rem !important; /* Force larger font size */
+    font-weight: bold;
+    color: white !important;
+  }
+  
+  .wallet-address {
+    font-size: 1.5rem !important; /* Force larger font size */
+    font-family: monospace;
+    color: rgb(234, 255, 0) !important; /* Highlight the wallet address */
+    margin: 15px 0;
+  }
+  
+  .copy-address-button {
+    background-color: #4CAF50; /* Same green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Same padding as Connect Wallet */
+    font-size: 1rem; /* Same font size */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Same rounded corners */
+    text-transform: none; /* No text transformation */
+    margin-top: 20px; /* Add some spacing above */
+  }
+  
+  .copy-address-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+  }
+  
+  
+  
+  
+  .connect-wallet {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .alert-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: bold !important;
+  }
+  
+  .alert-image {
+    width: 200px; /* Smaller image size */
+    height: auto;
+    margin: 0 20px; /* Space around the image */
+  }
+  
+  .alert-text {
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+
+  .top-left-logo {
+    position: absolute; /* Place it relative to the screen */
+    top: 30px; /* Adjust distance from the top */
+    left: 30px; /* Adjust distance from the left */
+    width: 98px; /* Set smaller width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensure it's above other elements */
+  }
+  
