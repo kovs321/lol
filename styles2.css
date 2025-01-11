@@ -235,3 +235,60 @@ body, html {
     z-index: 10; /* Ensure it's above other elements */
   }
   
+
+
+
+/* Styles for smaller screens (like iPhones) */
+@media only screen and (max-width: 768px) {
+  .red-alert {
+      padding: 20px; /* Reduce padding for smaller screens */
+      font-size: 1.2rem; /* Adjust overall font size */
+  }
+
+  .timer {
+      font-size: 1.5rem; /* Adjust timer font size for smaller screens */
+      line-height: 1.4; /* Improve text readability */
+  }
+
+  .siren {
+      font-size: 4rem; /* Make the siren icon smaller */
+  }
+
+  .wallet-section {
+      margin-top: 20px; /* Reduce spacing above the wallet section */
+  }
+
+  .wallet-text {
+      font-size: 1.5rem; /* Make wallet text smaller */
+  }
+
+  .wallet-address {
+      font-size: 1.2rem; /* Make the wallet address smaller */
+  }
+
+  .copy-address-button {
+      padding: 8px 15px; /* Make the button smaller */
+      font-size: 0.9rem; /* Adjust font size */
+  }
+
+  .connect-wallet {
+      top: 10px; /* Move Connect Wallet button closer to the top */
+      right: 10px; /* Adjust distance from the right */
+      font-size: 0.8rem; /* Make the button smaller */
+      padding: 8px 12px; /* Adjust button padding */
+  }
+
+  .alert-header {
+      flex-direction: column; /* Stack the alert text and image vertically */
+      text-align: center;
+  }
+
+  .alert-image {
+      width: 150px; /* Reduce the size of the image */
+      margin: 10px 0; /* Add spacing around the image */
+  }
+
+  .alert-text {
+      font-size: 1.2rem; /* Adjust alert text size */
+  }
+}
