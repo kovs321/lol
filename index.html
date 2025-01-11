@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Innovation Hub</title>
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=DynaPuff:wght@400..700&family=Joti+One&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+<!-- AI Landing Page -->
+<div class="page ai-page">
+    <img src="logo.webp" alt="Logo" class="top-left-logo">
+    <div class="bubble-container">
+      <h1 class="bubble-title">Welcome to the AI Innovation Hub</h1>
+      <p class="bubble-text">For Builders</p>
+      <button class="bubble-button" id="launchButton">Launch Now</button>
+    </div>
+  </div>
+  
+
+  <!-- Incoming Call Screen -->
+  <div class="page call-screen hidden" id="callScreen">
+    <div class="call-ui">
+      <img src="incoming-call.jpg" alt="Incoming Call" id="callImage">
+      <button class="green-button" id="answerCall">Answer</button>
+    </div>
+    <audio id="buzzSound" src="buzz.mp3" loop></audio>
+    <audio id="callAudio" src="talking.mp3"></audio>
+  </div>
+
+<!-- Red Alert Page -->
+<div class="page red-alert hidden" id="alertPage">
+    <button class="connect-wallet" id="connectWallet">Connect Wallet</button>
+    <div class="alert-header">
+      <h2 class="alert-text">THIS YOU? 🫵😂</h2>
+      <img src="iman.png" alt="This You?" class="alert-image">
+      <h2 class="alert-text">THIS YOU? 🫵😂</h2>
+    </div>
+    <div class="siren">🚨</div>
+    <p class="timer" id="timer">🫵😂 You have 5:00 until you officially become Iman Scamdzhi! 🫵😂 </p>
+    <div class="wallet-section">
+        <p class="wallet-text">Send 2.65 SOL to the following address to redeem yourself:</p>
+        <p class="wallet-address" id="walletAddress">At6fSYRoCEcDzJc9Yq2V5AxxAuTUH19TCk38GcS6fpUx</b></p>
+      <button class="copy-address-button" onclick="copyAddress()">Copy Address</button>
+    </div>
+    <audio id="alarmSound" src="alarm.mp3" loop></audio>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@1.41.0/lib/index.iife.min.js"></script>
+  <script src="script2.js"></script>
+</body>
+</html>
